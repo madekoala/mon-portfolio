@@ -1,0 +1,104 @@
+/* Conteneur global des projets */
+.projects {
+  background-image: url("/archeology-background.jpg");
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+/* Titres globaux */
+.projects h1,
+.projects h2 {
+  color: #6d4c41;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Grille des projets */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Carte de projet */
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 2px solid #6d4c41;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenu de la carte */
+.project-content h3 {
+  font-size: 1.5rem;
+  color: #6d4c41; /* Marron foncé */
+  margin-bottom: 10px;
+}
+
+.project-content p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.project-content a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #6d4c41;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Conteneur pour le logo */
+.project-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.project-logo img {
+  width: 80px;
+  height: auto;
+  max-height: 100px;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover .project-logo img {
+  transform: scale(1.1);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card {
+  animation: fadeIn 0.8s ease-in-out;
+}
