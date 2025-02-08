@@ -1,0 +1,121 @@
+/* Conteneur global des projets */
+.projects {
+  background-image: url("/archeology-background.jpg");
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 60px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Titres globaux */
+.projects h1,
+.projects h2 {
+  color: #6d4c41;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+/* Grille des projets */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/* Carte de projet */
+.project-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border: 2px solid #6d4c41;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenu de la carte */
+.project-content h3 {
+  font-size: 1.5rem;
+  color: #6d4c41;
+  margin-bottom: 10px;
+}
+
+.project-content p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Conteneur pour le logo */
+.project-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.project-logo img {
+  width: 100px;
+  height: auto;
+  max-height: 120px;
+  filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover .project-logo img {
+  transform: scale(1.1);
+}
+
+/* Bouton Voir le projet */
+.project-content a {
+  display: flex;
+  margin-top: auto;
+  padding: 10px 15px;
+  background: #6d4c41;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.project-button:hover {
+  background: #ff7e5f;
+  transform: scale(1.05);
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card {
+  animation: fadeIn 0.8s ease-in-out;
+}
