@@ -2,9 +2,6 @@
 
 # dependencies
 /next.config.mjs
-/packages-lock.json
-/packages.json
-/tsconfig.json
 /node_modules
 /.pnp
 .pnp.*
@@ -20,6 +17,9 @@
 # next.js
 /.next/
 /out/
+/packages-lock.json/
+/packages.json/
+/tsconfig.json/
 
 # production
 /build
@@ -43,3 +43,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Next.js
+.next
+out
+node_modules
+.next/cache
+.next/static
+
+# Logs & environnement
+.env.local
+.env.development.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
