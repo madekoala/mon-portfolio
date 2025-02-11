@@ -21,6 +21,17 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang={language}>
+      <head>
+        <link
+          rel="preload"
+          href="/fonts/custom-font.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <title>Mon Portfolio</title>
+        <link rel="icon" href="/logoJC-2.png" />
+      </head>
       <body>
         <header className="header">
           <div className="logo">

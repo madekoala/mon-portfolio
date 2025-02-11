@@ -1,6 +1,6 @@
 "use client";
 
-import projectsData from "../../Backend/Data/projectsdata";
+import projectsData from "../../../Backend/Data/projectsdata";
 import { motion } from "framer-motion";
 import "./projects.css";
 

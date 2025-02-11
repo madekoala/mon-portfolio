@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Modal from "../../src/components/modal";
+import Modal from "../../components/modal";
 import styles from "./contact.module.css";
 
 export default function Contact() {
