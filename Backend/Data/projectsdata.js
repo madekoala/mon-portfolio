@@ -66,7 +66,7 @@ const projectsData = {
       title: "Portfolio",
       description:
         "Création et optimisation de votre portfolio en ligne avec des bonnes pratiques SEO.",
-      link: "https://github.com/madekoala/portfolio",
+      link: "https://github.com/madekoala/mon-portfolio",
       theme: "green", // Mise en valeur
     },
   ],
@@ -74,10 +74,10 @@ const projectsData = {
   personal: [
     {
       id: 10,
-      title: "Analyse Archéologique avec QGIS",
+      title: "Analyse Archéologique avec Copernicus",
       description:
-        "Utilisation de QGIS pour analyser des sites archéologiques et produire des cartes interactives.",
-      link: "https://example.com/qgis-project",
+        "Utilisation de Copernicus (BDD satellite) pour analyser des sites archéologiques et produire des cartes interactives.",
+      link: "https://github.com/madekoala/qgis-project",
       theme: "brown", // Archéologie
     },
     {
@@ -85,9 +85,17 @@ const projectsData = {
       title: "Modélisation 3D d'un site historique",
       description:
         "Reconstitution 3D d'un site historique en combinant des données QGIS et Blender.",
-      link: "https://example.com/3d-model",
+      link: "https://github.com/madekoala/archeo3D",
       theme: "brown", // Archéologie
     },
+    {
+      id: 12,
+      title: "projet de fin d'études",
+      description:
+        "Analyse d'un projet de fin d'études en combinant des données QGIS et Blender.",
+      link: "https://github.com/madekoala/3d-model",
+      theme: "brown", // Archéologie
+    }
   ],
 };
 
