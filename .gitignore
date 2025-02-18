@@ -1,5 +1,16 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# Ignorer les fichiers de configuration de Netlify
+netlify.toml
+setup netlify
+
+# Ignorer les fichiers de configuration de projet
+eslint.config.mjs
+jsconfig.json
+next.config.mjs
+package-lock.json
+package.json
+tsconfig.json
 # dependencies
 /next.config.mjs
 /node_modules

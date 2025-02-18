@@ -4,7 +4,8 @@ import Head from "next/head";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaHtml5, FaCss3Alt, FaReact, FaGlobe, FaTools } from "react-icons/fa";
-import GithubStats from "../../components/gitgit"; // Assure-toi que le chemin est correct
+import GithubStats from "../../components/gitgit";
+import GithubLanguages from "../../components/githublanguage";
 import { SiSass, SiRedux, SiVite } from "react-icons/si";
 import styles from "./about.module.css";
 
@@ -63,11 +64,11 @@ export default function About() {
           >
             <p>
               Je suis un développeur front-end maîtrisant{" "}
-              <strong>HTML, CSS, Sass, React (Vite / Redux)</strong> et un
+              <strong>HTML, CSS, Sass, React (Vite / Redux)</strong> et un futur
               archéologue passionné qui développe sur{" "}
-              <strong>QGIS des modèles 3D de cartes</strong>. Mon objectif est
-              de fusionner technologie et histoire pour créer des expériences
-              numériques innovantes et immersives.
+              <strong>QGIS</strong> et <strong>Blender</strong> des modèles 3D de
+              cartes. Mon objectif est de fusionner technologie et histoire pour
+              créer des expériences numériques innovantes et immersives.
             </p>
           </motion.div>
         </div>
@@ -192,11 +193,14 @@ export default function About() {
               );
             })}
           </div>
-
         </motion.div>
         {/* Intégration du composant GitHubStats */}
+
         <div className="mt-10">
           <GithubStats token={process.env.NEXT_PUBLIC_GITHUB_TOKEN} />
+        </div>
+        <div>
+          <GithubLanguages />
         </div>
       </div>
     </>

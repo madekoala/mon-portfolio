@@ -61,7 +61,7 @@
 
 /* Bouton d'envoi */
 .button {
-  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  background: linear-gradient(135deg, #6d4c41, #8d6e63);
   color: #fff;
   font-size: 1.2rem;
   font-weight: bold;
@@ -75,7 +75,7 @@
 }
 
 .button:hover {
-  background: linear-gradient(135deg, #feb47b, #ff7e5f);
+  background: linear-gradient(135deg, #6d4c41, #8d6e63);
   transform: scale(1.05);
 }
 

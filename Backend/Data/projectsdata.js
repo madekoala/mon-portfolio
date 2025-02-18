@@ -4,7 +4,7 @@ const projectsData = {
       id: 1,
       title: "Booki",
       description:
-        "Création d'une plateforme de réservation de logements avec HTML/CSS et responsive design.",
+        "Création d'une plateforme de réservation de logements avec HTML/CSS et responsive .",
       link: "https://madekoala.github.io/Booki/",
       theme: "blue", // Thème éducatif
     },
@@ -19,7 +19,7 @@ const projectsData = {
     {
       id: 3,
       title: "Print-it",
-      description: "Premier pas sur le langage Javascript",
+      description: "Premier pas sur le langage Javascript,avec gestion d'un carousel",
       link: "https://madekoala.github.io/print-it-js/",
       theme: "yellow", // Créativité
     },
@@ -41,7 +41,7 @@ const projectsData = {
     {
       id: 6,
       title: "Nina-Carducci",
-      description: "Optimisation SEO d'un site de photographe",
+      description: "Optimisation SEO d'un site de photographe,en améliorant sa performance et son accessibilité.",
       link: "https://madekoala.github.io/Nina-Carducci/",
       theme: "red", // Accent sur l'optimisation
     },
