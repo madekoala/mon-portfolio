@@ -4,8 +4,6 @@ import Head from "next/head";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaHtml5, FaCss3Alt, FaReact, FaGlobe, FaTools } from "react-icons/fa";
-import GithubStats from "../../components/gitgit";
-import GithubLanguages from "../../components/githublanguage";
 import { SiSass, SiRedux, SiVite } from "react-icons/si";
 import styles from "./about.module.css";
 
@@ -194,14 +192,7 @@ export default function About() {
             })}
           </div>
         </motion.div>
-        {/* Intégration du composant GitHubStats */}
-
-        <div className="mt-10">
-          <GithubStats token={process.env.NEXT_PUBLIC_GITHUB_TOKEN} />
-        </div>
-        <div>
-          <GithubLanguages />
-        </div>
+       
       </div>
     </>
   );

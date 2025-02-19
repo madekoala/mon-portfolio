@@ -4,8 +4,17 @@
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/index.html"[build]
+    publish = "out" # Dossier à publier (modifiez-le selon votre configuration)
+    command = "npm run build" # Commande pour construire votre projet
+  
+  [[redirects]]
+    from = "/*"
+    to = "/index.html"
+    status = 200
   status = 200
 
 [[plugins]]
-  package = "@netlify/plugin-nextjs"
+  package = "@netlify/plugin-nextjs"[build]
+    command = "next build; next export" # Utilisez un point-virgule pour séparer les commandes
+    publish = "out" # Assurez-vous que ce dossier est correct

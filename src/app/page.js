@@ -24,7 +24,7 @@ export default function HomePage() {
 
   return (
     <div className="homepage">
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="exit">
         <motion.section 
           key="hero-section"
           className="hero-section"

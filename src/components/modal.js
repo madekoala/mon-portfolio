@@ -1,32 +1,26 @@
-import React from "react";
-import styles from "../../styles/modal.css";
+import React from 'react';
+import '../../styles/modal.module.css'; 
 
-const Modal = ({ isVisible, onClose, message }) => {
-  if (!isVisible) return null;
+const ContactModal = ({ isOpen, onClose }) => {
+    if (!isOpen) return null;
 
-  return (
-    <div className={styles.modalOverlay} onClick={onClose}>
-      <div
-        className={styles.modalContainer}
-        onClick={(e) => e.stopPropagation()}
-      >
-        <div className={styles.modalHeader}>
-          <h3>Message</h3>
-          <button className={styles.closeButton} onClick={onClose}>
-            &times;
-          </button>
+    return (
+        <div className="modalOverlay">
+            <div className="modalContainer">
+                <div className="modalHeader">
+                    <h2>Contactez-moi</h2>
+                    <button className="closeButton" onClick={onClose}>×</button>
+                </div>
+                <div className="modalBody">
+                    <p>Formulaire de contact ici...</p>
+                    {/* Ajoutez votre formulaire ici */}
+                </div>
+                <div className="modalFooter">
+                    <button className="modalButton" onClick={onClose}>Envoyer</button>
+                </div>
+            </div>
         </div>
-        <div className={styles.modalBody}>
-          <p>{message}</p>
-        </div>
-        <div className={styles.modalFooter}>
-          <button className={styles.modalButton} onClick={onClose}>
-            OK
-          </button>
-        </div>
-      </div>
-    </div>
-  );
+    );
 };
 
-export default Modal;
+export default ContactModal;
