@@ -15,6 +15,7 @@ export default function Projects() {
         Mes Projets
       </motion.h1>
 
+      {/* Section Projets OpenClassrooms */}
       <section className="projects-section">
         <motion.h2
           initial={{ opacity: 0, y: -10 }}
@@ -35,19 +36,25 @@ export default function Projects() {
               <div className="project-content">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Voir plus
-                </a>
+
+                {/* 📌 Ajout d’un conteneur pour bien centrer les boutons */}
+                <div className="project-buttons">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card-button"
+                  >
+                    Voir plus
+                  </a>
+                </div>
               </div>
             </motion.div>
           ))}
         </div>
       </section>
 
+      {/* Section Projets Personnels */}
       <section className="projects-section">
         <motion.h2
           initial={{ opacity: 0, y: -10 }}
@@ -68,13 +75,18 @@ export default function Projects() {
               <div className="project-content">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Voir plus
-                </a>
+
+                {/* 📌 Ajout d’un conteneur pour bien centrer les boutons */}
+                <div className="project-buttons">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card-button"
+                  >
+                    Voir plus
+                  </a>
+                </div>
               </div>
             </motion.div>
           ))}

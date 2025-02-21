@@ -84,15 +84,15 @@ const projectsData = {
       id: 11,
       title: "Modélisation 3D d'un site historique",
       description:
-        "Reconstitution 3D d'un site historique en combinant des données QGIS et Blender.",
+        "Reconstitution 3D d'un site historique en combinant des données tachionomique et des données cartographiques en utilisant QGIS et Blender.",
       link: "https://github.com/madekoala/archeo3D",
       theme: "brown", // Archéologie
     },
     {
       id: 12,
-      title: "projet de fin d'études",
+      title: "Projet de fin d'études collaboratif UBM",
       description:
-        "Analyse d'un projet de fin d'études en combinant des données QGIS et Blender.",
+        "Analyse d'un projet de fin d'études qui porte sur des données LIDAR en combinant des données QGIS et Blender.",
       link: "https://github.com/madekoala/3d-model",
       theme: "brown", // Archéologie
     }

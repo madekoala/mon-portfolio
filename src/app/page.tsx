@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
+import { CldImage } from 'next-cloudinary';
 import { useState, useEffect } from "react";
 import "../../styles/home.css";
 
@@ -24,7 +24,7 @@ export default function HomePage() {
 
   return (
     <div className="homepage">
-      <AnimatePresence mode="exit">
+      <AnimatePresence>    
         <motion.section 
           key="hero-section"
           className="hero-section"
@@ -163,7 +163,7 @@ export default function HomePage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <Image
+              <CldImage
                 src="/logoJC-2.png"
                 alt="Portrait de Jérémy Cresson"
                 width={300}
@@ -197,7 +197,7 @@ export default function HomePage() {
               transition={{ duration: 0.8, delay: 0.3 }}
             >
               <div className="project-home">
-                <Image
+                <CldImage
                   src="/sitearcheo.webp"
                   alt="Projet Principal"
                   width={600}
