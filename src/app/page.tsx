@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { CldImage } from 'next-cloudinary';
 import { useState, useEffect } from "react";
 import "../../styles/home.css";
 
