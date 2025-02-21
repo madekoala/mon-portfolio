@@ -12,8 +12,10 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/logoJC-2.png" sizes="any" />
       </head>
       <body>
-        <ClientLayout>{children}</ClientLayout>
+        <ClientLayout>
+          {children}
         <Footer />
+        </ClientLayout>
       </body>
     </html>
   );
