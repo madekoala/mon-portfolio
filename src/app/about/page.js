@@ -45,7 +45,7 @@ export default function About() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3 }}
           >
-            <Image
+            <img
               src="/logoJC-2.png"
               alt="Photo de profil"
               width={200}
