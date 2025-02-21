@@ -1,5 +1,5 @@
 import "../../styles/global.css"; 
-import ClientLayout from "./components/clientlayout";
+import ClientLayout from "./components/Clientlayout.js";
 import Footer from "./components/footer";
 
 export default function RootLayout({ children }) {
@@ -9,7 +9,6 @@ export default function RootLayout({ children }) {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Mon Portfolio</title>
-        <link rel="icon" href="/logoJC-2.png" sizes="any" />
       </head>
       <body>
         <ClientLayout>
