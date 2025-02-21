@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import styles from "../../styles/footer.module.css";
+import styles from "../../../styles/footer.module.css";
 
 const Footer = () => {
   const [year, setYear] = useState(null);
