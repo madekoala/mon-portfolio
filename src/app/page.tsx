@@ -164,7 +164,7 @@ export default function HomePage() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <CldImage
-                src="/logoJC-2.png"
+                src="logoJC-2.png"
                 alt="Portrait de Jérémy Cresson"
                 width={300}
                 height={300}
