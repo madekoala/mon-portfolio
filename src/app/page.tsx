@@ -163,7 +163,7 @@ export default function HomePage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <CldImage
+              <img
                 src="logoJC-2.png"
                 alt="Portrait de Jérémy Cresson"
                 width={300}
@@ -197,7 +197,7 @@ export default function HomePage() {
               transition={{ duration: 0.8, delay: 0.3 }}
             >
               <div className="project-home">
-                <CldImage
+                <img
                   src="/sitearcheo.webp"
                   alt="Projet Principal"
                   width={600}
