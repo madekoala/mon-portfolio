@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Modal from "../../components/modal";
 import styles from "./contact.module.css";
 
 export default function Contact() {
@@ -88,12 +87,6 @@ export default function Contact() {
           {loading ? "Envoi en cours..." : "Envoyer"}
         </motion.button>
       </motion.form>
-
-      <Modal
-        isVisible={isModalVisible}
-        onClose={() => setModalVisible(false)}
-        message={modalMessage}
-      />
     </div>
   );
 }
